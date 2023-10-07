@@ -10,13 +10,25 @@ public class PairProgramming {
 //			System.out.println(i);
 //		}
 		
-		// Task 3: Modify the code to calculate and print the product of all numbers from 1 to 10 using a loop
+//		// Task 3: Modify the code to calculate and print the product of all numbers from 1 to 10 using a loop
+//		int total = 1;
+//		
+//		for (int i = 1; i <= 10; i++) {
+//			total *= i;
+//		}
+//		
+//		System.out.printf("The product of all numbers from 1 to 10 is %d",total);
+		
+		// Modify the code to calculate and print the product of all odd numbers from 1 to 10 using a loop. Use an if statement to check if a number is odd before including it in the product calculation
 		int total = 1;
 		
 		for (int i = 1; i <= 10; i++) {
-			total *= i;
+			if (i % 2 != 0) {
+				total *= i;
+			}
 		}
 		
-		System.out.printf("The product of all numbers from 1 to 10 is %d",total);
+		System.out.printf("The product of all odd numbers from 1 to 10 is %d",total);
+		
 	}
 }
